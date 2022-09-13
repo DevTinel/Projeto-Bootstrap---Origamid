@@ -12,6 +12,40 @@
 </head>
 
 <body>
+
+  <!-- Modal -->
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <div id="emailHelp" class="form-text">Esqueceu a senha? <a href="#">clique aqui</a></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- fim modal -->
+
   <nav class="navbar navbar-expand-md navbar-light px-4 bg-light fixed-top py-3 shadow-sm p-3 mb-5 bg-body rounded.,">
     <a href="/index.html" class="navbar-brand">
       <img src="img/caravan.svg" alt="logo caravan">
@@ -36,7 +70,7 @@
           <a href="contato.html" class="nav-link">Contato</a>
         </li>
         <li class="nav-item">
-          <a href="login.html" class="nav-link">Login</a>
+          <a href="login.html" data-bs-toggle="modal" data-bs-target="#modalLogin" class="nav-link">Login</a>
         </li>
         <li class="nav-item">
           <a href="inscricao.html" class=" btn btn-outline-primary ms-md-2">Inscreva-se</a>
