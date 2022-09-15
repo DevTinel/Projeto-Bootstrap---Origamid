@@ -73,7 +73,7 @@
           <a href="login.html" data-bs-toggle="modal" data-bs-target="#modalLogin" class="nav-link">Login</a>
         </li>
         <li class="nav-item">
-          <a href="inscricao.html" class=" btn btn-outline-primary ms-md-2">Inscreva-se</a>
+          <a href="inscricao.html" class="active btn btn-outline-primary ms-md-2">Inscreva-se</a>
         </li>
 
       </ul>
@@ -90,6 +90,52 @@
         <h1 class="display-4 text-primary">INSCREVA-SE</h1>
       </div>
 
+      <div class="row">
+        <form class="row  col-lg-6">
+          <div class="col-md-6 form-group">
+            <label for="inputNome" class="form-label d-block text-start">Nome</label>
+            <input type="text" class="form-control mb-2" id="inputNome">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="inputCpf" class="form-label d-block text-start">CPF</label>
+            <input type="text" placeholder="xxx.xxx.xxx-xx" class="form-control mb-2" id="inputCpf">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="inputEmail" class="form-label d-block text-start">Email</label>
+            <input type="email" placeholder="email@email.com" class="form-control mb-2" id="inputEmail">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="inputSenha" class="form-label d-block text-start">Senha</label>
+            <input type="password" placeholder="senha de acesso" class="form-control mb-2" id="inputSenha">
+          </div>
+          <div class="col-md-12 form-group">
+            <label for="inputEndereco" class="form-label d-block text-start">Endereço</label>
+            <input type="text" placeholder="numero, nome da rua e bairro" class="mb-2 form-control" id="inputEndereco">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="inputCidade" class="form-label d-block text-start">Cidade</label>
+            <input type="text" placeholder="" class="form-control" id="inputCidade">
+          </div>
+          <div class="col-md-3 form-group">
+            <label for="estado" class="form-label d-block text-start">Estado</label>
+            <select class="form-select form-control form-select-sm" id="estado" aria-label=".form-select-sm example">
+              <option disabled selected>Estado</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>
+              <option value="CE">Ceara</option>
+              <option value="AC">Acre</option>
+            </select>
+          </div>
+          <div class="col-md-3 form-group">
+            <label for="inputCep" class="form-label d-block text-start">Cep</label>
+            <input type="number" placeholder="xxxxx-xxx" class="form-control" id="inputCep">
+          </div>
+
+          <div class="col-12 mt-4">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
 
     </section>
 
