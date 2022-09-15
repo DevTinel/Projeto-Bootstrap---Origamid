@@ -16,3 +16,19 @@ body{
 a{
   text-decoration: none;
 }
+.h2-plano{
+  text-align: left;
+}
+.lista{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+.lista li{
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding: 1rem;
+}
+.lista li:last-child{
+  border-bottom: none;
+}
