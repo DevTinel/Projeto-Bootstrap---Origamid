@@ -32,3 +32,7 @@ a{
 .lista li:last-child{
   border-bottom: none;
 }
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
